@@ -12,11 +12,11 @@
             background-position: center;
         }
         .kuru{
-            background-image: url("img/ru.gif");
+            background-image: url("img/ku.gif");
             background-repeat: no-repeat;
         }
         .kuru-p{
-            background-image: url("img/ku.gif");
+            background-image: url("img/ru.gif");
             background-repeat: no-repeat;
         }
 
@@ -24,18 +24,18 @@
 </head>
 
 <body>
-    <div class="kuru" id="span"></div>
+    <div class="kuru" id="rotate"></div>
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <script>
         $(function () {
 
-            $("#span").on("mouseup", function () {
-                $("#span").removeClass("kuru");
-                $("#span").addClass("kuru-p");
+            $("#rotate").on("mouseup", function () {
+                $("#rotate").removeClass("kuru");
+                $("#rotate").addClass("kuru-p");
             })
-            $("#span").on("mousedown", function () {
-                $("#span").removeClass("kuru-p");
-                $("#span").addClass("kuru");
+            $("#rotate").on("mousedown", function () {
+                $("#rotate").removeClass("kuru-p");
+                $("#rotate").addClass("kuru");
             })
         });
     </script>
