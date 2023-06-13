@@ -2,17 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>honkai-star-rail</title>
+    <title>honkai-star-rail-pop</title>
     <link rel="icon" type="image/x-icon" href="img/avatar_5.ico"/>
+    <style>
+        div{
+            width:100%;
+            height:600px;
+            background-size:500px;
+            background-position: center;
+        }
+        .kuru{
+            background-image: url("img/ru.gif");
+            background-repeat: no-repeat;
+        }
+        .kuru-p{
+            background-image: url("img/ku.gif");
+            background-repeat: no-repeat;
+        }
+
+    </style>
 </head>
+
 <body>
+    <div class="kuru" id="span"></div>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
 
-
-
-
-
-
-
-
+            $("#span").on("mouseup", function () {
+                $("#span").removeClass("kuru");
+                $("#span").addClass("kuru-p");
+            })
+            $("#span").on("mousedown", function () {
+                $("#span").removeClass("kuru-p");
+                $("#span").addClass("kuru");
+            })
+        });
+    </script>
 </body>
 </html>
