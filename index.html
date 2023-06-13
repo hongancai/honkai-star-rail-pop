@@ -30,12 +30,12 @@
         $(function () {
 
             $("#rotate").on("mouseup", function () {
-                $("#rotate").removeClass("kuru");
-                $("#rotate").addClass("kuru-p");
-            })
-            $("#rotate").on("mousedown", function () {
                 $("#rotate").removeClass("kuru-p");
                 $("#rotate").addClass("kuru");
+            })
+            $("#rotate").on("mousedown", function () {
+                $("#rotate").removeClass("kuru");
+                $("#rotate").addClass("kuru-p");
             })
         });
     </script>
